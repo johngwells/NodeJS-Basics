@@ -1,8 +1,8 @@
 // terminal to run: node app.js
-const http = require('http');
+const http = require("http");
 
-const server = http.createServer((req, res) => {
-  console.log(req);
-});
+const routes = require('./routes');
 
-server.listen(3000, () => console.log('server running...'))
+const server = http.createServer(routes);
+
+server.listen(3000, () => console.log("server running..."));
