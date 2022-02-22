@@ -1,4 +1,3 @@
-// terminal to run: node app.js
 const http = require("http");
 
 const routes = require('./routes');
